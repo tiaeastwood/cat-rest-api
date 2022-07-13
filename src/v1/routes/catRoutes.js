@@ -18,14 +18,9 @@ module.exports = router;
  * @openapi
  * /api/v1/cats:
  *   get:
+ *     summary: Get all cats
  *     tags:
  *       - Cats
- *     parameters:
- *       - in: query
- *         name: mode
- *         schema:
- *           type: string
- *         description: A cat object
  *     responses:
  *       200:
  *         description: OK
@@ -68,9 +63,9 @@ module.exports = router;
  *       - Cats
  *     parameters:
  *       - in: query
- *         name: mode
+ *         name: New Cat
  *         schema:
- *           type: string
+ *           type: object
  *         description: A cat object
  *     requestBody:
  *       description: Add a new cat
@@ -82,6 +77,44 @@ module.exports = router;
  *     responses:
  *       201:
  *         description: Created
+ *       5XX:
+ *         description: FAILED
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 status:
+ *                   type: string
+ *                   example: FAILED
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     error:
+ *                       type: string
+ *                       example: "Some error message"
+ */
+
+
+
+/**
+ * @openapi
+ * /api/v1/cats/{catId}:
+ *   delete:
+ *     summary: Delete a cat by ID
+ *     tags:
+ *       - Cats
+ *     parameters:
+ *       - name: catId
+ *         in: path
+ *         description: catId to delete
+ *         required: true
+ *         type: string
+ *     responses:
+ *       204:
+ *         description: Deleted
+ *       400: Invalid ID supplied
+ *       404: Cat with that ID not found
  *       5XX:
  *         description: FAILED
  *         content:

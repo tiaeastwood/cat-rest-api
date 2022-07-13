@@ -71,35 +71,6 @@
       "id": "5d5ca551-caf6-4843-9b4d-52074222f208",
       "createdAt": "7/12/2022, 5:31:49 PM",
       "updatedAt": "7/12/2022, 5:31:49 PM"
-    },
-    {
-      "name": "Test",
-      "sex": "Male",
-      "age": 5,
-      "breed": "mixed",
-      "colour": "brown",
-      "likes": [
-        "chicken",
-        "getting into fights",
-        "hunting mice"
-      ],
-      "id": "37894130-9739-4866-b597-11dae0b5a88a",
-      "createdAt": "7/13/2022, 5:14:31 PM",
-      "updatedAt": "7/13/2022, 5:14:31 PM"
-    },
-    {
-      "name": "Mittens",
-      "sex": "Male",
-      "age": 2,
-      "breed": "Bengal",
-      "colour": "Brown",
-      "likes": [
-        "chicken",
-        "going outside"
-      ],
-      "id": "9310927e-0fe1-483a-990c-9991b803f55b",
-      "createdAt": "7/13/2022, 5:17:59 PM",
-      "updatedAt": "7/13/2022, 5:17:59 PM"
     }
   ]
 }
