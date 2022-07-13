@@ -1,0 +1,59 @@
+{
+  "cats": [
+    {
+      "id": "5d5ca551-caf6-4843-9b4d-52074222f200",
+      "name": "Spud",
+      "sex": "Male",
+      "age": 5,
+      "breed": "mixed",
+      "colour": "brown",
+      "likes": ["chicken", "getting into fights", "hunting mice"],
+      "createdAt": "7/12/2022, 5:31:49 PM",
+      "updatedAt": "7/12/2022, 5:31:49 PM"
+    },
+    {
+      "id": "5d5ca551-caf6-4843-9b4d-52074222f202",
+      "name": "Princess",
+      "sex": "Female",
+      "age": 2,
+      "breed": "Ragdoll",
+      "colour": "white and brown",
+      "likes": ["getting brushed", "cat sticks", "chirping at birds"],
+      "createdAt": "7/12/2022, 5:31:49 PM",
+      "updatedAt": "7/12/2022, 5:31:49 PM"
+    },
+    {
+      "id": "5d5ca551-caf6-4843-9b4d-52074222f204",
+      "name": "Sausage",
+      "sex": "Male",
+      "age": 4,
+      "breed": "Sphynx",
+      "colour": "grey",
+      "likes": ["wearing clothes", "playing with feathers", "sardines"],
+      "createdAt": "7/12/2022, 5:31:49 PM",
+      "updatedAt": "7/12/2022, 5:31:49 PM"
+    },
+    {
+      "id": "5d5ca551-caf6-4843-9b4d-52074222f201",
+      "name": "Tora",
+      "sex": "Female",
+      "age": 1,
+      "breed": "Bengal",
+      "colour": "orange and brown",
+      "likes": ["going on adventures"],
+      "createdAt": "7/12/2022, 5:31:49 PM",
+      "updatedAt": "7/12/2022, 5:31:49 PM"
+    },
+    {
+      "name": "Binx",
+      "sex": "Male",
+      "age": 2,
+      "breed": "Mixed",
+      "colour": "Black",
+      "likes": ["Dreamies", "Going out at night"],
+      "id": "5d5ca551-caf6-4843-9b4d-52074222f208",
+      "createdAt": "7/12/2022, 5:31:49 PM",
+      "updatedAt": "7/12/2022, 5:31:49 PM"
+    }
+  ]
+}
