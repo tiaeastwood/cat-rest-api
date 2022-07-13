@@ -1,5 +1,5 @@
 const { v4: uuid } = require("uuid");
-const Cat = require("../database/cat");
+const Cat = require("../../database/cat");
 
 const getAllCats = () => {
   try {
