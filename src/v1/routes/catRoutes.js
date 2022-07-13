@@ -62,11 +62,12 @@ module.exports = router;
  *     tags:
  *       - Cats
  *     parameters:
- *       - in: query
- *         name: New Cat
+ *       - in: body
+ *         name: body
+ *         description: A new cat object to be added
+ *         required: true
  *         schema:
- *           type: object
- *         description: A cat object
+ *           $ref: "#/components/schemas/NewCat"
  *     requestBody:
  *       description: Add a new cat
  *       required: true

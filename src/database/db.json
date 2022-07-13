@@ -71,6 +71,20 @@
       "id": "5d5ca551-caf6-4843-9b4d-52074222f208",
       "createdAt": "7/12/2022, 5:31:49 PM",
       "updatedAt": "7/12/2022, 5:31:49 PM"
+    },
+    {
+      "name": "Mittens",
+      "sex": "Male",
+      "age": 2,
+      "breed": "Bengal",
+      "colour": "Brown",
+      "likes": [
+        "chicken",
+        "going outside"
+      ],
+      "id": "be13365e-837d-4973-a173-032c83e3d9f6",
+      "createdAt": "7/13/2022, 5:57:06 PM",
+      "updatedAt": "7/13/2022, 5:57:06 PM"
     }
   ]
 }
