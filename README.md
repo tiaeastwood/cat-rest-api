@@ -59,4 +59,3 @@ Where the data is stored. Here I'm using a mock database in the form of a json f
 - Try making a GET request to this endpoint using a tool such as [Insomnia](https://insomnia.rest/) or [Postman](https://www.postman.com/). I'm a fan of Insomnia for personal projects as it's super easy to use.
 - Once running locally, you'll also see a link to the docs in the terminal: ```http://localhost:3000/api/v1/docs```
 
----

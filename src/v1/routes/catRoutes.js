@@ -14,7 +14,6 @@ router.delete("/:catId", catController.deleteOneCat);
 
 module.exports = router;
 
-
 /**
  * @openapi
  * /api/v1/cats:
@@ -39,8 +38,8 @@ module.exports = router;
  *                   type: string
  *                   example: OK
  *                 data:
- *                   type: array 
- *                   items: 
+ *                   type: array
+ *                   items:
  *                     $ref: "#/components/schemas/Cat"
  *       5XX:
  *         description: FAILED
@@ -49,13 +48,54 @@ module.exports = router;
  *             schema:
  *               type: object
  *               properties:
- *                 status: 
+ *                 status:
  *                   type: string
  *                   example: FAILED
  *                 data:
  *                   type: object
  *                   properties:
  *                     error:
- *                       type: string 
+ *                       type: string
+ *                       example: "Some error message"
+ */
+
+/**
+ * @openapi
+ * /api/v1/cats:
+ *   post:
+ *     summary: Add a new cat
+ *     tags:
+ *       - Cats
+ *     parameters:
+ *       - in: query
+ *         name: mode
+ *         schema:
+ *           type: string
+ *         description: A cat object
+ *     requestBody:
+ *       description: Add a new cat
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *            $ref: '#/components/schemas/NewCat'
+ *     responses:
+ *       201:
+ *         description: Created
+ *       5XX:
+ *         description: FAILED
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 status:
+ *                   type: string
+ *                   example: FAILED
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     error:
+ *                       type: string
  *                       example: "Some error message"
  */

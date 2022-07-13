@@ -132,3 +132,33 @@ module.exports = {
  *           type: string
  *           example: 4/20/2022, 2:21:56 PM
  */
+
+
+/**
+ * @openapi
+ * components:
+ *   schemas:
+ *     NewCat:
+ *       type: object
+ *       properties:
+ *         name: 
+ *           type: string
+ *           example: Mittens  
+ *         sex:
+ *           type: string
+ *           example: Male
+ *         age:
+ *           type: number
+ *           example: 2
+ *         breed:
+ *           type: string
+ *           example: Bengal
+ *         colour:
+ *           type: string
+ *           example: Brown
+ *         likes:
+ *           type: array
+ *           items:
+ *             type: string
+ *           example: ["chicken", "going outside"]
+ */
