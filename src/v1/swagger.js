@@ -8,7 +8,7 @@ const options = {
     openapi: "3.0.0",
     info: { title: "Cat API", version: "1.0.0" },
   },
-  apis: ["./src/v1/routes/catRoutes.js", "./src/database/Cat.js"],
+  apis: ["./src/database/api/api.yml"],
 };
 
 // Docs in JSON format

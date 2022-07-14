@@ -85,6 +85,22 @@
       "id": "be13365e-837d-4973-a173-032c83e3d9f6",
       "createdAt": "7/13/2022, 5:57:06 PM",
       "updatedAt": "7/13/2022, 5:57:06 PM"
+    },
+    {
+      "name": "Lucky",
+      "sex": "Male",
+      "age": 2,
+      "breed": "Bengal",
+      "colour": "Brown",
+      "likes": [
+        [
+          "chicken",
+          "going outside"
+        ]
+      ],
+      "id": "8e8df618-5f52-427a-b32b-bf66f953738c",
+      "createdAt": "7/14/2022, 3:04:55 PM",
+      "updatedAt": "7/14/2022, 3:04:55 PM"
     }
   ]
 }

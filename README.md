@@ -54,7 +54,7 @@ Where the data is stored. Here I'm using a mock database in the form of a json f
 
 - Feel free to download or fork this code.
 - `npm i` (install dependencies)
-- `npm run start` (runs the server with nodemon)
+- `npm run dev` (runs the server with nodemon)
 - visit `http://localhost:3000/api/v1/cats` to view the api
 - Try making a GET request to this endpoint using a tool such as [Insomnia](https://insomnia.rest/) or [Postman](https://www.postman.com/). I'm a fan of Insomnia for personal projects as it's super easy to use.
 - Once running locally, you'll also see a link to the docs in the terminal: ```http://localhost:3000/api/v1/docs```
