@@ -7,11 +7,7 @@
       "age": 5,
       "breed": "mixed",
       "colour": "brown",
-      "likes": [
-        "chicken",
-        "getting into fights",
-        "hunting mice"
-      ],
+      "likes": ["chicken", "getting into fights", "hunting mice"],
       "createdAt": "7/12/2022, 5:31:49 PM",
       "updatedAt": "7/12/2022, 5:31:49 PM"
     },
@@ -22,11 +18,7 @@
       "age": 2,
       "breed": "Ragdoll",
       "colour": "white and brown",
-      "likes": [
-        "getting brushed",
-        "cat sticks",
-        "chirping at birds"
-      ],
+      "likes": ["getting brushed", "cat sticks", "chirping at birds"],
       "createdAt": "7/12/2022, 5:31:49 PM",
       "updatedAt": "7/12/2022, 5:31:49 PM"
     },
@@ -37,11 +29,7 @@
       "age": 4,
       "breed": "Sphynx",
       "colour": "grey",
-      "likes": [
-        "wearing clothes",
-        "playing with feathers",
-        "sardines"
-      ],
+      "likes": ["wearing clothes", "playing with feathers", "sardines"],
       "createdAt": "7/12/2022, 5:31:49 PM",
       "updatedAt": "7/12/2022, 5:31:49 PM"
     },
@@ -52,9 +40,7 @@
       "age": 1,
       "breed": "Bengal",
       "colour": "orange and brown",
-      "likes": [
-        "going on adventures"
-      ],
+      "likes": ["going on adventures"],
       "createdAt": "7/12/2022, 5:31:49 PM",
       "updatedAt": "7/12/2022, 5:31:49 PM"
     },
@@ -64,10 +50,7 @@
       "age": 2,
       "breed": "Mixed",
       "colour": "Black",
-      "likes": [
-        "Dreamies",
-        "Going out at night"
-      ],
+      "likes": ["Dreamies", "Going out at night"],
       "id": "5d5ca551-caf6-4843-9b4d-52074222f208",
       "createdAt": "7/12/2022, 5:31:49 PM",
       "updatedAt": "7/12/2022, 5:31:49 PM"
@@ -78,29 +61,10 @@
       "age": 2,
       "breed": "Bengal",
       "colour": "Brown",
-      "likes": [
-        "chicken",
-        "going outside"
-      ],
+      "likes": ["chicken", "going outside"],
       "id": "be13365e-837d-4973-a173-032c83e3d9f6",
       "createdAt": "7/13/2022, 5:57:06 PM",
       "updatedAt": "7/13/2022, 5:57:06 PM"
-    },
-    {
-      "name": "Lucky",
-      "sex": "Male",
-      "age": 2,
-      "breed": "Bengal",
-      "colour": "Brown",
-      "likes": [
-        [
-          "chicken",
-          "going outside"
-        ]
-      ],
-      "id": "8e8df618-5f52-427a-b32b-bf66f953738c",
-      "createdAt": "7/14/2022, 3:04:55 PM",
-      "updatedAt": "7/14/2022, 3:04:55 PM"
     }
   ]
 }

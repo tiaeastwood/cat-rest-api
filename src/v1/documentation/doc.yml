@@ -1,0 +1,172 @@
+openapi: "3.0.2"
+info:
+  title: Cat API
+  version: "1.0"
+paths:
+  /api/v1/cats:
+    get:
+      tags:
+        - cats
+      summary: Get all cats
+      responses:
+        "200":
+          description: "OK"
+        "404":
+          description: Cats not found
+        "5XX":
+          description: Failed
+    post:
+      tags:
+        - cats
+      summary: Post a new cat
+      requestBody:
+        description: Add a new cat
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Cat"
+      responses:
+        "201":
+          description: "Created"
+        "5XX":
+          description: Failed
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: FAILED
+                  data:
+                    type: object
+                    properties:
+                      error:
+                        type: string
+                        example: "Some error message"
+  /api/v1/cats/{catId}:
+    get:
+      tags:
+        - cats
+      summary: Get a cat by ID
+      description: Returns a single cat
+      parameters:
+        - name: catId
+          in: path
+          description: catId to return
+          required: true
+          type: string
+      responses:
+        "200":
+          description: successful operation
+        "404":
+          description: Cat not found
+        "5XX":
+          description: Failed
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: FAILED
+                  data:
+                    type: object
+                    properties:
+                      error:
+                        type: string
+                        example: "Some error message"
+    delete:
+      tags:
+        - cats
+      summary: Delete a cat by ID
+      description: Delete a single cat"
+      parameters:
+        - name: catId
+          in: path
+          description: catId to delete
+          required: true
+          type: string
+      responses:
+        "204":
+          description: Deleted
+        "400":
+          description: Invalid ID supplied
+        "404":
+          description: Cat with that ID not found
+        "5XX":
+          description: FAILED
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: FAILED
+                  data:
+                    type: object
+                    properties:
+                      error:
+                        type: string
+                        example: "Some error message"
+
+components:
+  schemas:
+    Cat:
+      type: object
+      properties:
+        id:
+          type: string
+          example: "61dbae02-c147-4e28-863c-db7bd402b2d6"
+        name:
+          type: string
+          example: "Lucky"
+        sex:
+          type: string
+          example: "Male"
+        age:
+          type: number
+          example: 2
+        breed:
+          type: string
+          example: "Bengal"
+        colour:
+          type: string
+          example: "Brown"
+        likes:
+          type: array
+          items:
+            type: string
+            example: ["chicken", "going outside"]
+        createdAt:
+          type: string
+          example: "4/20/2022, 2:21:56 PM"
+        updatedAt:
+          type: string
+          example: "4/20/2022, 2:21:56 PM"
+    NewCat:
+      type: object
+      properties:
+        name:
+          type: string
+          example: "Lucky"
+        sex:
+          type: string
+          example: "Male"
+        age:
+          type: number
+          example: 7
+        breed:
+          type: string
+          example: "Unknown"
+        colour:
+          type: string
+          example: "Black"
+        likes:
+          type: array
+          items:
+            type: string
+            example: ["mice", "scratching the sofa"]
